@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Ticket Beka</title>
+      <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+    <body>
+        <style>
+          body{
+          margin:0;
+          padding:0;
+          background-image:url('signupbg.jpg');
+          background-position:center;
+          background-size:cover;
+          font-family:fantasy;
+          }
+        </style>
+        <header class="head-main">
+            <h1>Add Data Panel</h1>
+        </header>
+        <main>
+          <div class="container">
+            <form class="my-form" method="POST" action="add_data.php">
+                  <label>Movie Name:</label>
+                  <input type="text" name="MovieName" placeholder="Movie Name" id="moviename">
+                    <label>Theatre Name:</label>
+                    <input type="text" name="TheatreName" placeholder="Theatre Name" id="theatrename">
+                  <label>Language:</label>
+                  <input name="lang" placeholder="Movie Language" id="lang">
+                  <label>Rating:</label>
+                  <input name="rating" placeholder="Movie Rating" id="rating">
+                  <label>Release Date:</label>
+                  <input type="date" name="rdate" id="rdate">
+                  <label>Budget</label>
+                  <input type="text"name="budget" placeholder=" Movie Budget" id="budget">
+                  <label>Cast:</label>
+                  <input type="text"name="cast" placeholder="Movie Cast" id="cast">
+                  <label>Director:</label>
+                  <input type="text"name="director" placeholder="Movie Director" id="director">
+                    <label>Image URL:</label>
+                    <input type="text" name="imgurl" placeholder="Paste the image URL here" id="imgurl">
+                  <label>Duration:</label>
+                  <input type="text" name="dur" placeholder="Movie Duration">
+                  <label>Location:</label>
+                  <input type="text" name="location" placeholder="Theatre Location">
+                  <label>Location Link:</label>
+                  <input type="text" name="locationlink" placeholder="Paste Location Link Here">
+                      <label>Show Date:</label>
+                      <input type="date"name="Showdate"  id="sdate">
+                  <label>Show Time</label>
+                  <input type="text"name="stime" placeholder="Show Time" id="stime">                
+                <br>
+                <br>
+                    <input class="button"type="submit">
+
+            </form>
+          </div>
+        </main>
+      </body>
+    </head>
+</html>
+<style>
+*{
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+.head-main{
+  color:cornsilk;
+  text-align: center;
+  width: 100%;
+  font-family:sans-serif;
+}
+.container{
+  width: 500px;
+  margin: auto;
+  
+}
+.my-form{
+  border-radius: 10px;
+  background-color: rgba(0,0,0, 0.5);
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.my-form label{
+  border-radius: 10px;
+  display: block;
+  padding-bottom: 5px;
+  color:cornsilk;
+}
+.form-grp{
+  padding-bottom: 10px;
+}
+.my-form input{
+  border-radius: 5px;
+  padding: 8px;
+  border: .1em solid #777777 ;
+}
+.i-input:focus{
+  border-color:black;
+  outline: width 1;
+}
+.button {
+  border-radius: 5px;
+background-color: dodgerblue;
+padding-left: 1px;
+padding-right: 1px;
+width:100px
+}
+</style>
